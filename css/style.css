@@ -4031,6 +4031,11 @@ input[type="button"].btn-block {
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
+.btn-negro {
+        background-color: #552213;
+        border: 3px;  /* Esto es opcional, pero si quieres quitar el borde por defecto */
+        color: white;  /* Si deseas que el color del texto/icono dentro del botón sea blanco */
+    }
 
 .navbar-nav {
   display: flex;
