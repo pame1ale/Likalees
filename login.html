@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Likalees - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/login-style.css"> 
+    <!-- Agrega un archivo CSS separado para el estilo del formulario de inicio de sesión -->
+<style type="text/css">
+    /* login-style.css */
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('tu_imagen_de_fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo del contenedor con transparencia */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.input-container i {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background-color: #552213;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #964B00;
+}
+
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Iniciar Sesión</h1>
+        <div class="input-container">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+        </div>
+        <div class="input-container">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Contraseña" required>
+        </div>
+        <button onclick="login()">Iniciar Sesión</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
