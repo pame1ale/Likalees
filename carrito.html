@@ -124,7 +124,8 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 <script>
-    function cargarCarrito() {
+
+function cargarCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     const container = document.getElementById('carritoContainer');
 
@@ -134,7 +135,19 @@
     }
 
     let html = '';
+    let total = 0; // Variable para almacenar el total
+
     for (let producto of carrito) {
+        console.log("Precio del producto:", producto.precio); // Verificar precio
+        console.log("Cantidad del producto:", producto.cantidad); // Verificar cantidad
+
+        const precioNumerico = parseFloat(producto.precio) || 0;
+        const cantidadNumerica = parseInt(producto.cantidad) || 0;
+
+
+        const subtotal = precioNumerico * cantidadNumerica;
+        total += subtotal;
+
         html += `
             <div class="card mb-3" style="max-width: 540px; margin: 0 auto;"> 
                 <div class="row no-gutters">
@@ -146,14 +159,39 @@
                             <h4 class="card-title">${producto.nombre}</h4>
                             <p class="card-text">s/${producto.precio.toFixed(2)}</p>
                             <p class="card-text">Cantidad: ${producto.cantidad}</p>
+                            <p class="card-text">Subtotal: s/${subtotal.toFixed(2)}</p>
                         </div>
+                        <button onclick="eliminarProducto(event, '${producto.nombre}')" class="btn btn-danger">Eliminar</button>
                     </div>
                 </div>
+                <p class="card-text">Subtotal: s/${subtotal.toFixed(2)}</p>
             </div>
         `;
     }
+
+
+    // Añadir el total al final del carrito
+    html += `
+        <div class="total-container" style="text-align: center; margin-top: 20px;">
+            <h3>Total a pagar: s/${total.toFixed(2)}</h3>
+        </div>
+    `;
+
     container.innerHTML = html;
 }
+function eliminarProducto(event, nombreProducto) {
+    event.stopPropagation();
+    event.preventDefault(); // Esto evita la recarga de página si es que el botón está causando una.
+
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    carrito = carrito.filter(producto => producto.nombre !== nombreProducto);
+
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    cargarCarrito();
+}
+
     window.onload = cargarCarrito;
 </script>
     <!-- JavaScript Libraries -->
