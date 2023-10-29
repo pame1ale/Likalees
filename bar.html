@@ -51,6 +51,7 @@
 					<a href="promociones.html" class="nav-item nav-link " style="color:#964B00">Promociones</a>
 					<a href="refundPolicies.html" class="nav-item nav-link " style="color:#964B00">Politicas</a>
                     <a href="contact.html" class="nav-item nav-link  " style="color:#964B00">Contactanos</a>
+                    <a href="carrito.html" id="cart-icon" class="nav-item nav-link" style="color:#964B00"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </nav>
@@ -81,27 +82,29 @@
                 <h1 class="display-4">Variados</h1>
             </div>
             <div class="row">
-                <div class="col-lg-6 mb-5">
+                <div class="col-lg-6 mb-5 product-container">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/barraE1.png" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/barraE1.png" alt="Energix - Bar De Cafe">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fa fa-truck service-icon"></i>Energix - Bar De Cafe </h4>
-							<p>Deliciosa barra de café para disfrutar en cualquier momento del día.</p>
-							<p>150 gr.</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/7.00</p>
+                            <h4 class="product-name"><i class="fa fa-truck service-icon"></i>Energix - Bar De Cafe</h4>
+                            <p>Deliciosa barra de café para disfrutar en cualquier momento del día.</p>
+                            <p>150 gr.</p>
+                            <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/7.00</p>
                         </div>
-                        <div class="mt-3"style ="margin:auto;" >
+                        <div class="mt-3" style="margin:auto;">
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
+                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+                               <button onclick="handleAgregarAlCarrito('Energix - Bar De Cafe', 'img/barraE1.png', 7.00, this)">Agregar al carrito</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
@@ -241,6 +244,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
