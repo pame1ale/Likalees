@@ -48,10 +48,9 @@
                     <a href="about.html" class="nav-item nav-link " style="color:#964B00">Sobre Nosotros</a>
                     <a href="service.html" class="nav-item nav-link " style="color:#964B00">Catalogo</a>
                     <a href="anuncios.html" class="nav-item nav-link " style="color:#964B00">Eventos</a>
-		    <a href="promociones.html" class="nav-item nav-link " style="color:#964B00">Promociones</a>
-		    <a href="refundPolicies.html" class="nav-item nav-link " style="color:#964B00">Politicas</a>
+					<a href="promociones.html" class="nav-item nav-link " style="color:#964B00">Promociones</a>
+					<a href="refundPolicies.html" class="nav-item nav-link " style="color:#964B00">Politicas</a>
                     <a href="contact.html" class="nav-item nav-link  " style="color:#964B00">Contactanos</a>
-		    <a href="carrito.html" id="cart-icon" class="nav-item nav-link" style="color:#964B00"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </nav>
@@ -85,7 +84,7 @@
 			<div class="col-lg-6 mb-5" style="padding: 5px;">
 				<div class="row align-items-center">
 					<div class="col-sm-5">
-						<img class="img-fluid mb-3 mb-sm-0" src="img/fresaC.png" alt="">
+						<img class="img-fluid mb-3 mb-sm-0" src="img/fresaP.png" alt="">
 					</div>
 					<div class="col-sm-7">
 						<h4><i class="fa fa-truck service-icon"></i>Caramelo De Fresa</h4>
@@ -95,9 +94,9 @@
 					</div>
 					<div class="mt-3" style="margin:auto;">
 						<div class="input-group">
-							<input type="number" class="form-control" placeholder="Cantidad">
+							<input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
 							<div class="input-group-append">
-								<button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+								<button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Fresa', 'img/fresap.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
 							</div>
 						</div>
 					</div>
@@ -106,7 +105,7 @@
 			<div class="col-lg-6 mb-5" style="padding: 5px;">
 				<div class="row align-items-center">
 					<div class="col-sm-5">
-						<img class="img-fluid mb-3 mb-sm-0" src="img/fresaP.png" alt="">
+						<img class="img-fluid mb-3 mb-sm-0" src="img/fresaC.png" alt="">
 					</div>
 					<div class="col-sm-7">
 						<h4><i class="fa fa-truck service-icon"></i>Caramelo De Fresa</h4>
@@ -116,9 +115,9 @@
 					</div>
 					<div class="mt-3" style="margin:auto;">
 						<div class="input-group">
-							<input type="number" class="form-control" placeholder="Cantidad">
+							<input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
 							<div class="input-group-append">
-								<button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+								<button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Fresa', 'img/fresaC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
 							</div>
 						</div>
 					</div>
@@ -127,7 +126,7 @@
 				<div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/naranjaC.png" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/naranjaP.png" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-coffee service-icon"></i>Caramelo De Naranja </h4>
@@ -137,9 +136,9 @@
                         </div>
                          <div class="mt-3"style ="margin:auto;" >
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
+                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Naranja', 'img/naranjaP.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +147,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/naranjaP.png" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/naranjaC.png" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-coffee service-icon"></i>Caramelo De Naranja </h4>
@@ -159,9 +158,9 @@
                         </div>
                          <div class="mt-3"style ="margin:auto;" >
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
+                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Naranja', 'img/naranjaC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +169,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/limonC.png" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/limonP.png" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-award service-icon"></i>Caramelo De Limón</h4>
@@ -181,9 +180,9 @@
                     </div>
 					<div class="mt-3"style ="margin:auto;" >
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
+                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Limon', 'img/limonC.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>
                                 </div>
                             </div>
                      </div>
@@ -191,7 +190,7 @@
 				 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/limonP.png" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/limonC.png" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-award service-icon"></i>Caramelo De Limón</h4>
@@ -202,9 +201,9 @@
                     </div>
 					<div class="mt-3"style ="margin:auto;" >
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
+                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Limon', 'img/limonC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>
                                 </div>
                             </div>
                      </div>
@@ -212,7 +211,7 @@
 				<div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/mielC.png" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/mielP.png" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-table service-icon"></i>Caramelo De Miel </h4>
@@ -222,9 +221,9 @@
                         </div>
                                                 <div class="mt-3"style ="margin:auto;" >
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
+                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Miel', 'img/mielP.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +232,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/mielP.png" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/mielC.png" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-table service-icon"></i>Caramelo De Miel </h4>
@@ -243,9 +242,9 @@
                         </div>
                                                 <div class="mt-3"style ="margin:auto;" >
                             <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
+                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Agregar Carrito</button>
+                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Miel', 'img/mielC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>
                                 </div>
                             </div>
                         </div>
