@@ -1,13 +1,30 @@
-// script.js
-function login() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+function handleAgregarAlCarrito(nombre, imagen, precio, buttonElement) {
+    let carrito = [];
 
-    // Verificar las credenciales (puedes agregar tus propias verificaciones aquí)
-    if (username === "usuario" && password === "contrasena") {
-        // Redirige al usuario a index.html
-        window.location.href = "inicio.html";
-    } else {
-        alert("Nombre de usuario o contraseña incorrectos");
+    const carritoStorage = localStorage.getItem('carrito');
+    if (carritoStorage) {
+        carrito = JSON.parse(carritoStorage);
     }
+
+    const productContainer = buttonElement.closest('.product-container');
+    const productQuantityInput = productContainer.querySelector(".product-quantity");
+    let productQuantity = parseInt(productQuantityInput.value);
+
+    // Validar la cantidad
+    if (isNaN(productQuantity) || productQuantity <= 0) {
+        productQuantity = 1;
+    }
+
+    const producto = {
+        nombre: nombre,
+        imagen: imagen,
+        precio: precio,
+        cantidad: productQuantity
+    };
+
+    carrito.push(producto);
+
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    alert('Producto agregado al carrito!');
 }
