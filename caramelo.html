@@ -82,175 +82,189 @@
                 <h1 class="display-4">Variados</h1>
             </div>
             <div class="row">
-			<div class="col-lg-6 mb-5" style="padding: 5px;">
-				<div class="row align-items-center">
-					<div class="col-sm-5">
-						<img class="img-fluid mb-3 mb-sm-0" src="img/fresaP.png" alt="">
-					</div>
-					<div class="col-sm-7">
-						<h4><i class="fa fa-truck service-icon"></i>Caramelo De Fresa</h4>
-						<p>6 unidades</p>
-						<p>18 gr.</p>
-						<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/5.00</p>
-					</div>
-					<div class="mt-3" style="margin:auto;">
-						<div class="input-group">
-							<input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
-							<div class="input-group-append">
-								<button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Fresa', 'img/fresap.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 mb-5" style="padding: 5px;">
-				<div class="row align-items-center">
-					<div class="col-sm-5">
-						<img class="img-fluid mb-3 mb-sm-0" src="img/fresaC.png" alt="">
-					</div>
-					<div class="col-sm-7">
-						<h4><i class="fa fa-truck service-icon"></i>Caramelo De Fresa</h4>
-						<p>9 unidades</p>
-						<p>30 gr.</p>
-						<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/9.00</p>
-					</div>
-					<div class="mt-3" style="margin:auto;">
-						<div class="input-group">
-							<input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
-							<div class="input-group-append">
-								<button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Fresa', 'img/fresaC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-				<div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/naranjaP.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-coffee service-icon"></i>Caramelo De Naranja </h4>
-							<p>6 unidades</p>
-							<p>18 gr.</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/5.00</p>
-                        </div>
-                         <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Naranja', 'img/naranjaP.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Fresa Productos -->
+            <div class="col-lg-6 mb-5 product-container">
+    <div class="row align-items-center">
+        <div class="col-sm-5">
+            <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/fresaP.png" alt="Caramelo De Naranja">
+        </div>
+        <div class="col-sm-7">
+            <h4 class="product-name"><i class="fa fa-coffee service-icon"></i>Caramelo De Fresa</h4>
+            <p>5 unidades</p>
+            <p>18 gr.</p>
+            <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/5.00</p>
+        </div>
+        <div class="mt-3" style="margin:auto;">
+            <div class="input-group">
+                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Fresa', 'img/fresaP.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-6 mb-5 product-container">
+    <div class="row align-items-center">
+        <div class="col-sm-5">
+            <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/fresaC.png" alt="Caramelo De Naranja">
+        </div>
+        <div class="col-sm-7">
+            <h4 class="product-name"><i class="fa fa-coffee service-icon"></i>Caramelo De Fresa</h4>
+            <p>9 unidades</p>
+            <p>30 gr.</p>
+            <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/9.00</p>
+        </div>
+        <div class="mt-3" style="margin:auto;">
+            <div class="input-group">
+                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Naranja', 'img/fresaC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+<!-- Caramelo De Naranja - Pequeño -->
+<div class="col-lg-6 mb-5 product-container">
+    <div class="row align-items-center">
+        <div class="col-sm-5">
+            <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/naranjaP.png" alt="Caramelo De Naranja">
+        </div>
+        <div class="col-sm-7">
+            <h4 class="product-name"><i class="fa fa-coffee service-icon"></i>Caramelo De Naranja</h4>
+            <p>5 unidades</p>
+            <p>18 gr.</p>
+            <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/5.00</p>
+        </div>
+        <div class="mt-3" style="margin:auto;">
+            <div class="input-group">
+                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Naranja', 'img/naranjaP.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<!-- Caramelo De Naranja - Grande -->
+<div class="col-lg-6 mb-5 product-container">
+    <div class="row align-items-center">
+        <div class="col-sm-5">
+            <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/naranjaC.png" alt="Caramelo De Naranja">
+        </div>
+        <div class="col-sm-7">
+            <h4 class="product-name"><i class="fa fa-coffee service-icon"></i>Caramelo De Naranja</h4>
+            <p>9 unidades</p>
+            <p>30 gr.</p>
+            <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/9.00</p>
+        </div>
+        <div class="mt-3" style="margin:auto;">
+            <div class="input-group">
+                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Naranja', 'img/naranjaC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Caramelo De Limón - Pequeño -->
+<div class="col-lg-6 mb-5 product-container">
+    <div class="row align-items-center">
+        <div class="col-sm-5">
+            <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/limonP.png" alt="Caramelo De Limón">
+        </div>
+        <div class="col-sm-7">
+            <h4 class="product-name"><i class="fa fa-award service-icon"></i>Caramelo De Limón</h4>
+            <p>6 unidades</p>
+            <p>18 gr.</p>
+            <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/5.00</p>
+        </div>
+        <div class="mt-3" style="margin:auto;">
+            <div class="input-group">
+                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Limon', 'img/limonP.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Caramelo De Limón - Grande -->
+<div class="col-lg-6 mb-5 product-container">
+    <div class="row align-items-center">
+        <div class="col-sm-5">
+            <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/limonC.png" alt="Caramelo De Limón">
+        </div>
+        <div class="col-sm-7">
+            <h4 class="product-name"><i class="fa fa-award service-icon"></i>Caramelo De Limón</h4>
+            <p>9 unidades</p>
+            <p>30 gr.</p>
+            <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/9.00</p>
+        </div>
+        <div class="mt-3" style="margin:auto;">
+            <div class="input-group">
+                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Limon', 'img/limonC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Caramelo De Miel - Pequeño -->
+    <div class="col-lg-6 mb-5 product-container">
+        <div class="row align-items-center">
+            <div class="col-sm-5">
+                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/mielP.png" alt="Caramelo De Miel">
+            </div>
+            <div class="col-sm-7">
+                <h4 class="product-name"><i class="fa fa-table service-icon"></i>Caramelo De Miel</h4>
+                <p>6 unidades</p>
+                <p>18 gr.</p>
+                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/5.00</p>
+            </div>
+            <div class="mt-3" style="margin:auto;">
+                <div class="input-group">
+                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Miel', 'img/mielP.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/naranjaC.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-coffee service-icon"></i>Caramelo De Naranja </h4>
-							<p>9 unidades</p>
-							<p>30 gr.</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/9.00</p>
-							
-                        </div>
-                         <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Naranja', 'img/naranjaC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Caramelo De Miel - Grande -->
+    <div class="col-lg-6 mb-5">
+        <div class="row align-items-center">
+            <div class="col-sm-5">
+                <img class="img-fluid mb-3 mb-sm-0" src="img/mielC.png" alt="">
+            </div>
+            <div class="col-sm-7">
+                <h4><i class="fa fa-table service-icon"></i>Caramelo De Miel</h4>
+                <p>9 unidades</p>
+                <p>30 gr.</p>
+                <p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/9.00</p>
+            </div>
+            <div class="mt-3" style="margin:auto;">
+                <div class="input-group">
+                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Miel', 'img/mielC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/limonP.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-award service-icon"></i>Caramelo De Limón</h4>
-							<p>6 unidades</p>
-							<p>18 gr.</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/5.00</p>
-                        </div>
-                    </div>
-					<div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Limon', 'img/limonC.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                     </div>
-                </div>
-				 <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/limonC.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-award service-icon"></i>Caramelo De Limón</h4>
-							<p>9 unidades</p>
-							<p>30 gr.</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/9.00</p>
-                        </div>
-                    </div>
-					<div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Limon', 'img/limonC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                     </div>
-                </div>
-				<div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/mielP.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Caramelo De Miel </h4>
-                            <p>6 unidades</p>
-							<p>18 gr.</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/5.00</p>
-                        </div>
-                                                <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Miel', 'img/mielP.png', 5.00, this)"><i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/mielC.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Caramelo De Miel </h4>
-                            <p>9 unidades</p>
-							<p>30 gr.</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/9.00</p>
-                        </div>
-                                                <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Caramelo De Miel', 'img/mielC.png', 9.00, this)"><i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </div>
             </div>
         </div>
     </div>
@@ -327,6 +341,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
