@@ -51,6 +51,7 @@
 					<a href="promociones.html" class="nav-item nav-link " style="color:#964B00">Promociones</a>
                     <a href="refundPolicies.html" class="nav-item nav-link " style="color:#964B00">Politicas</a>
                     <a href="contact.html" class="nav-item nav-link  " style="color:#964B00">Contactanos</a>
+                    <a href="carrito.html" id="cart-icon" class="nav-item nav-link" style="color:#964B00"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </nav>
@@ -81,191 +82,198 @@
                 <h1 class="display-4">Variados</h1>
             </div>
             <div class="row">
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/poloM.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-truck service-icon"></i>Polo De Dama </h4>
-							<p>Tallas : XXL XL L M S</p>
-							<p>Manga corta<p/>
-							<p>Manga larga<p/>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/25.00</p>
-                        </div>
-                        <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/poloM.png" alt="Polo De Dama">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-truck service-icon"></i>Polo De Dama</h4>
+                                <p>Tallas : XXL XL L M S</p>
+                                <p>Manga corta</p>
+                                <p>Manga larga</p>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/25.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Polo De Dama', 'img/poloM.png', 25.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/poloH.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-coffee service-icon"></i>Polo De Varon </h4>
-							<p>Tallas : XXL XL L M S</p>
-							<p>Manga corta<p/>
-							<p>Manga larga<p/>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/30.00</p>
-                        </div>
-                        <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/poloH.png" alt="Polo De Varon">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-coffee service-icon"></i>Polo De Varon</h4>
+                                <p>Tallas : XXL XL L M S</p>
+                                <p>Manga corta</p>
+                                <p>Manga larga</p>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/30.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Polo De Varon', 'img/poloH.png', 30.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/poloHM.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-award service-icon"></i>Polos A Juego </h4>
-							<p>Tallas : XXL XL L M S</p>
-							<p>Manga corta<p/>
-							<p>Manga larga<p/>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/78.00</p>
-                        </div>
-                    </div>
-                                            <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
-                                </div>
+
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/poloHM.png" alt="Polos A Juego">
                             </div>
-                        </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/sombreroM.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Sombrero </h4>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/35.00</p>
-                            <p class="m-0"></p>
-                        </div>
-                                                <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-award service-icon"></i>Polos A Juego</h4>
+                                <p>Tallas : XXL XL L M S</p>
+                                <p>Manga corta</p>
+                                <p>Manga larga</p>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/78.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Polos A Juego', 'img/poloHM.png', 78.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/termoN.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Termo Metalico </h4>
-							<p> 1 litro</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/15.00</p>
-                        </div>
-                            <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/sombreroM.png" alt="Sombrero">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-table service-icon"></i>Sombrero</h4>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/35.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button" onclick="handleAgregarAlCarrito('Sombrero', 'img/sombreroM.png', 35.00, this)"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                        <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/termoC.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Termo Encafeinado</h4>
-							<p>700 militros</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/12.00</p>
-                        </div>
-                        <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                    <!-- Termo Metálico -->
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/termoN.png" alt="Termo Metálico">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-table service-icon"></i>Termo Metálico</h4>
+                                <p>1 litro</p>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/15.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                        <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/termoCB.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Termo Pareja </h4>
-							<p>500 militros</p>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/35.00</p>
-                            <p class="m-0"></p>
-                        </div>
-                                                <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                    <!-- Termo Encafeinado -->
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/termoC.png" alt="Termo Encafeinado">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-table service-icon"></i>Termo Encafeinado</h4>
+                                <p>700 militros</p>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/12.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/gorroM.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Gorro De Dama</h4>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/10.00</p>
-                        </div>
-                        <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+
+                    <!-- Termo Pareja -->
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/termoCB.png" alt="Termo Pareja">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-table service-icon"></i>Termo Pareja</h4>
+                                <p>500 militros</p>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/35.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/gorroH.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Gorro De Varon </h4>
-							<p style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/10.00</p>
-                        </div>
-                        <div class="mt-3"style ="margin:auto;" >
-                            <div class="input-group">
-                                <input type="number" class="form-control" placeholder="Cantidad">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                    <!-- Gorro De Dama -->
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/gorroM.png" alt="Gorro De Dama">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-table service-icon"></i>Gorro De Dama</h4>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/10.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                    <!-- Gorro De Varon -->
+                    <div class="col-lg-6 mb-5 product-container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0 product-image" src="img/gorroH.png" alt="Gorro De Varon">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4 class="product-name"><i class="fa fa-table service-icon"></i>Gorro De Varon</h4>
+                                <p class="product-price" style="font-weight: bold; color: black; font-family: 'Comic Sans MS', cursive; text-align: center;">s/10.00</p>
+                            </div>
+                            <div class="mt-3" style="margin:auto;">
+                                <div class="input-group">
+                                    <input type="number" class="form-control product-quantity" placeholder="Cantidad" min="1" step="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -302,7 +310,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">BOLETIN INFORMATIVO</h4>
-                <p>En "LiKaleas", estamos emocionadas de compartir contigo nuestras últimas novedades y eventos relacionados con nuestros productos</p>
+                <p>En "LiKalees", estamos emocionadas de compartir contigo nuestras últimas novedades y eventos relacionados con nuestros productos</p>
                 <div class="w-100">
                     <div class="input-group">
                         <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
@@ -342,6 +350,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
